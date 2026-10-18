@@ -100,26 +100,26 @@ flowchart TD
 ```text
                         main
                          │
-        ┌─────┴─────┐
-        │                               │
-   feat/core                  feat/auth
-   ├── commit 1               ├── commit 1
-   ├── commit 2               ├── commit 2
-   └── commit 3               └── commit 3
-        │                               │
-        └─────┬─────┘
+        ┌────────────────┴────────────────┐
+        │                                 │
+    feat/core                         feat/auth
+    ├── commit 1                      ├── commit 1
+    ├── commit 2                      ├── commit 2
+    └── commit 3                      └── commit 3
+        │                                 │
+        └────────────────┬────────────────┘
                          │
                  Merge Commits / PRs
                          │
                         main
                          │
-        ┌─────┴───────┐
-        │                                     │
-   feat/api                          feat/storage
-   ├── commit 4                       ├── commit 4
-   └── commit 5                       └── commit 5
-        │                                        │
-        └─────┬────────┘
+        ┌────────────────┴────────────────┐
+        │                                 │
+    feat/api                         feat/storage
+    ├── commit 4                      ├── commit 4
+    └── commit 5                      └── commit 5
+        │                                 │
+        └────────────────┬────────────────┘
                          │
                  Merge Commits / PRs
                          │
